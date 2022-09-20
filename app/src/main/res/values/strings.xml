@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">GhibliMovies</string>
+    <string name="titleOriginalRomanised">Original Title:</string>
+    <string name="description">Sinopsis</string>
+    <string name="director">Director:</string>
+    <string name="producer">Producer:</string>
+    <string name="relaseDate">Release date:</string>
+    <string name="Score">Rotten Tomatoes Score:</string>
+</resources>

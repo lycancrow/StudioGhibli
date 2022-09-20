@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="4dp"
+    android:layout_marginHorizontal="16dp"
+    app:cardBackgroundColor="#8cffffff"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:paddingHorizontal="0dp"
+        android:paddingVertical="0dp">
+
+        <ImageView
+            android:id="@+id/ghibliImage"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="10dp"
+
+
+            app:layout_constraintBottom_toBottomOf="@+id/endRow1"
+            app:layout_constraintEnd_toEndOf="@+id/endColumn1"
+            app:layout_constraintStart_toStartOf="@+id/beginColumn1"
+            app:layout_constraintTop_toTopOf="@+id/beginRow1" />
+
+        <TextView
+            android:id="@+id/ghibliMovie"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:fontFamily="@font/painwall"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="@+id/endRow1"
+
+
+            app:layout_constraintEnd_toEndOf="@+id/endColumn2"
+            app:layout_constraintStart_toStartOf="@+id/beginColumn2"
+            app:layout_constraintTop_toTopOf="@+id/beginRow1"
+            tools:text="Example text" />
+
+
+
+        <!--constraint-->
+        <!--Columnas-->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/beginColumn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.01" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/endColumn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.2" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/beginColumn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.25" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/endColumn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.99" />
+
+        <!--Filas-->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/beginRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/endRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="1" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
